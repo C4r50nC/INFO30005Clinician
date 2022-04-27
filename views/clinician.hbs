@@ -1,0 +1,30 @@
+<h3>Hi {{username}}</h3>
+<hr>
+{{#each records}}
+<table style="margin-bottom: 2rem;">
+    <tr>
+        <th>Patient</th>
+        <th>BloodGlucoseLevel</th>
+        <th>Weight</th>
+        <th>DosesInsulinTaken</th>
+        <th>Exercise</th>
+        <th>Message</th>
+    </tr>
+    <tr>
+        <td>{{this.patient}}</td>
+        {{#if this.bloodGlucoseLevelTooHigh}}
+        <td style="color: red;">{{this.bloodGlucoseLevel}}</td>
+        {{else}}
+        <td>{{this.bloodGlucoseLevel}}</td>
+        {{/if}}
+        <td>{{this.weight}}</td>
+        {{#if this.dosesInsulinTakenTooHigh}}
+        <td style="color: red;">{{this.dosesInsulinTaken}}</td>
+        {{else}}
+        <td>{{this.dosesInsulinTaken}}</td>
+        {{/if}}
+        <td>{{this.exercise}}</td>
+        <td>{{this.message}}</td>
+    </tr>
+</table>
+{{/each}}
