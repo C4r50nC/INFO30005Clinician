@@ -18,6 +18,7 @@ mongoose.connect(db).then(() => console.log('MongoDB Connected...')).catch((err)
 
 app.use('/auth', auth);
 app.use('/clinician', clinician)
+app.use(express.static('public'))
 
 var hbs = exphbs.create({ defaultLayout: 'main', extname: '.hbs' });
 app.engine('hbs', hbs.engine);

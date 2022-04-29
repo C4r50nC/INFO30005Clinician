@@ -1,19 +1,19 @@
-<form action="/auth/login" , method="post">
-    <legend>Login as clinician</legend>
-    <hr>
+<form action="/auth/login" , method="post", id="login">
+    <header id="dah">DIABETES@HOME</header>
+    <div id="backSquare"></div>
     <table id='logDetails'>
-        <tr>
-            <td><label for='nameInput'>username</label></td>
-            <td><input type='text' name="username" /></td>
+        <tr id = 'username'>
+            <td><label for='nameInput'>Username</label></td>
+            <tr><td><input type='text' name="username" id="usernamebox"/></td></tr>
+        </tr>
+        <tr id = 'password'>
+            <td><label for='ageInput'>Password</label></td>
+            <tr><td><input type='password' name="password" id="passwordbox"/></td></tr>
         </tr>
         <tr>
-            <td><label for='ageInput'>password</label></td>
-            <td><input type='password' name="password" /></td>
-        </tr>
-        <tr>
-            <td colspan='2'><input type='submit' /></td>
+            <td colspan='2'><input type='submit' value="Login" id="loginbutton"/></td>
         </tr>
     </table>
-    <hr>
-    <p>Don't have an account?</p><a href="./register">register</a>
+    
+     <p id="register"><a href="./register">register</a></p>
 </form>

@@ -1,0 +1,179 @@
+#login::before {
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("/images/bjt.png") no-repeat;
+    background-size: 100% 100%;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+#regis::before {
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("/images/3.png") no-repeat;
+    background-size: 100% 100%;
+    filter: blur(5px);
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#dah {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100px;
+    color: #285e30;
+    font-size: 24px;
+    line-height: 50px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+#dshh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100px;
+    color: #285e30;
+    font-size: 24px;
+    line-height: 50px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+#ddhh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100px;
+    color: #285e30;
+    font-size: 24px;
+    line-height: 50px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.log { 
+    position: absolute;
+    font-size: 20px;
+    top: 30%;
+    left: 38%
+}
+
+.regi { 
+    position: absolute;
+    font-size: 20px;
+    top: 30%;
+    left: 38%
+}
+
+.record { 
+    position: absolute;  
+    top: 20%;
+    left: 25%;
+}
+
+.patient { 
+    position: absolute; 
+}
+
+.patient-head { 
+    margin-bottom: 1%;
+}
+
+body {
+    background-color: #F4FCF7;
+}
+
+#backSquare {
+    background-color: white;
+    height: 630px;
+    width: 440px;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 170px;
+}
+
+#logDetails {
+    position: relative;
+    margin-left: 150px;
+    margin-top: -450px;
+}
+
+#username {
+    position: relative;
+    padding-right: 100px;
+    right: 85px;
+    color: #605a5a;
+}
+
+#usernamebox {
+    position: relative;
+    width: 350px;
+    height: 38px;
+    border-radius: 12px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    text-align: left;
+    right: 85px;
+    color: #605a5a;
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+
+#password {
+    position: relative;
+    padding-right: 100px;
+    right: 85px;
+    color: #605a5a;
+}
+
+#passwordbox {
+    position: relative;
+    width: 350px;
+    height: 38px;
+    border-radius: 12px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    text-align: left;
+    right: 85px;
+    color: #605a5a;
+    padding: 0 10px;
+}
+
+#loginbutton {
+    position: absolute;
+    background-color: #365a0c;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 230px;
+    height: 65px;
+    font-size: 20px;
+    border: 0;
+    top: 200%;
+    right: 42%;
+}
+
+#register {
+    position: absolute;
+    text-decoration: underline;
+    font-size: 12px;
+    float: right;
+    right: 37%;
+}
