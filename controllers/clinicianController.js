@@ -14,37 +14,20 @@ exports.patientsGet = async function (req, res) {
         for (i = 0; i < patients.length; i++) {
             records[i].patient = patients[i].username
         }
-        // this part is for testing thresholds display
-        // for (i = 0, i < patients.length; i++;) {
-        //     if (records[i].bloodGlucose > 6.0) {
-        //         records[i].bloodGlucoseLevelTooHigh = true;
-        //     }
-        //     else{
-        //         records[i].bloodGlucoseLevelTooHigh = false;
-        //     }
-        //     if (records[i].dosesInsulin > 4) {
-        //         records[i].dosesInsulinTakenTooHigh = true;
-        //     }
-        //     else{
-        //         records[i].dosesInsulinTakenTooHigh = flase;
-        //     }
-        //     if (records[i].weight > 75){
-        //         records[i].weightTooHigh = true;
-        //     }
-        //     else{
-        //         records[i].weightTooHigh = false;
-        //     }
-        //     if (records[i].exercise < 8000 || records[i].exercise > 12000){
-        //         records[i].exerciseUnqualified = true;
-        //     }
-        //     else{
-        //         records[i].exerciseUnqualified = false;
-        //     }
-        // }
-        records[0].bloodGlucoseLevelTooHigh = true;
-        records[1].bloodGlucoseLevelTooHigh = false;
-        records[0].dosesInsulinTakenTooHigh = false;
-        records[1].dosesInsulinTakenTooHigh = true;
+        for (i = 0; i < records.length; i++) {
+            if (records[i].bloodGlucoseLevel > 6) {
+                records[i].bloodGlucoseLevelTooHigh = true
+            }
+            if (records[i].dosesInsulinTaken > 4) {
+                records[i].dosesInsulinTakenTooHigh = true;
+            }
+            if (records[i].weight > 75){
+                records[i].weightTooHigh = true;
+            }
+            if (records[i].exercise < 8000){
+                records[i].exerciseUnqualified = true;
+            }
+        }
         
         res.render('clinician', { username: clinician.username, patients: patients, records: records })
     }

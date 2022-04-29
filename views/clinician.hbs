@@ -21,13 +21,21 @@
                 {{else}}
                 <td>{{this.bloodGlucoseLevel}}</td>
                 {{/if}}
+                {{#if this.weightTooHigh}}
+                <td style="color: red;">{{this.weight}}</td>
+                {{else}}
                 <td>{{this.weight}}</td>
+                {{/if}}
                 {{#if this.dosesInsulinTakenTooHigh}}
                 <td style="color: red;">{{this.dosesInsulinTaken}}</td>
                 {{else}}
                 <td>{{this.dosesInsulinTaken}}</td>
                 {{/if}}
+                {{#if this.exerciseUnqualified}}
+                <td style="color: red;">{{this.exercise}}</td>
+                {{else}}
                 <td>{{this.exercise}}</td>
+                {{/if}}
             </tr>
         </table>
         {{/each}}
