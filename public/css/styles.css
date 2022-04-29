@@ -5,7 +5,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: url("/images/bjt.png") no-repeat;
+    background: url("/img/bjt.png") no-repeat;
     background-size: 100% 100%;
     filter: blur(5px);
     z-index: -1;
@@ -18,7 +18,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: url("/images/3.png") no-repeat;
+    background: url("/img/3.png") no-repeat;
     background-size: 100% 100%;
     filter: blur(5px);
     z-index: -1;
@@ -171,9 +171,8 @@ body {
 }
 
 #register {
-    position: absolute;
+    position: relative;
     text-decoration: underline;
     font-size: 12px;
-    float: right;
-    right: 37%;
+    left: 76%;
 }
